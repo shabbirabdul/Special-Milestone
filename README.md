@@ -14,6 +14,10 @@ test and production environments.
 We used selenium to do smoke testing. Selenium is an open source technology for automating browser based applications.
 It can also be used to perform load and performance tests.
 
+For this milestone we are taking the same project as we used in milestone 3.
+https://github.com/spring-projects/greenhouse
+
+
 
 
 
