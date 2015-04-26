@@ -17,6 +17,46 @@ It can also be used to perform load and performance tests.
 For this milestone we are taking the same project as we used in milestone 3.
 https://github.com/spring-projects/greenhouse
 
+We would like to check if the correct version of software is deployed or not. To do this we are performing a test deploy as shown:
+##image
+
+The app subjected to deployment has some changes done on it. Like, the home page was modified. So,the size of the homepage of the new version is different from the previous version. 
+one away of smoke testing is to check the size of the home page. A selenium script is written to do the same. 
+```
+URL local = new URL("http://localhost:9515");
+			WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
+			// open the browser and go to home page of the application
+			driver.get("http://localhost:18080/mywebapp/");
+			// wait 5 seconds and close the browser
+			Thread.sleep(5000);
+			if(driver.getPageSource().length()!=1856)
+				fail("Incorrect version of Software deployed");
+			driver.quit();
+			```
+
+```
+  URL local = new URL("http://localhost:9515");
+			WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
+			// open the browser and go to home page of the application
+			driver.get("http://localhost:18080/mywebapp/");
+			String text = "Spring is light weight java application development framework ";
+			if(driver.getPageSource().contains("Spring is light weight java application development framework"))
+				System.out.println("Correct version of software deployed");
+			else
+				fail("Incorrect version of Software deployed");
+```
+
+We have used TestNG plugin to publish results.
+
+
+
+
+
+
+
+
+
+
 
 
 
