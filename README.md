@@ -32,9 +32,11 @@ URL local = new URL("http://localhost:9515");
 			if(driver.getPageSource().length()!=1856)
 				fail("Incorrect version of Software deployed");
 			driver.quit();
+			
 			```
 
 ```
+
   URL local = new URL("http://localhost:9515");
 			WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
 			// open the browser and go to home page of the application
@@ -44,6 +46,7 @@ URL local = new URL("http://localhost:9515");
 				System.out.println("Correct version of software deployed");
 			else
 				fail("Incorrect version of Software deployed");
+				
 ```
 
 We have used TestNG plugin to publish results.
