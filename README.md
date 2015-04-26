@@ -26,7 +26,7 @@ one away of smoke testing is to check the size of the home page. A selenium scri
 URL local = new URL("http://localhost:9515");
 			WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
 			// open the browser and go to home page of the application
-			driver.get("http://localhost:18080/mywebapp/");
+			driver.get("http://ec2-52-6-55-84.compute-1.amazonaws.com:18080/mywebapp/");
 			// wait 5 seconds and close the browser
 			Thread.sleep(5000);
 			if(driver.getPageSource().length()!=1856)
@@ -40,7 +40,7 @@ URL local = new URL("http://localhost:9515");
   URL local = new URL("http://localhost:9515");
 			WebDriver driver = new RemoteWebDriver(local, DesiredCapabilities.chrome());
 			// open the browser and go to home page of the application
-			driver.get("http://localhost:18080/mywebapp/");
+			driver.get("http://ec2-52-6-55-84.compute-1.amazonaws.com:18080/mywebapp/");
 			String text = "Spring is light weight java application development framework ";
 			if(driver.getPageSource().contains("Spring is light weight java application development framework"))
 				System.out.println("Correct version of software deployed");
