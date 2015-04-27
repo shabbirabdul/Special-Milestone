@@ -20,6 +20,7 @@ We would like to check if the correct version of software is deployed or not. To
 -----image -- use the image we used in presentation
 
 The app subjected to deployment has some changes done on it. The home page of the application was modified. So,the size of the homepage of the new version is different from the previous version. 
+
 *App before changes*
 ![alt text](https://github.ncsu.edu/github-enterprise-assets/0000/2100/0000/0782/74b53bba-ec62-11e4-87cb-734cdbe9cf21.png)
 
