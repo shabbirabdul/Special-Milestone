@@ -17,7 +17,8 @@ We used [Selenium](http://www.seleniumhq.org/) to do smoke testing. Selenium is 
 For this Milestone we are using the same project as we used in Milestone 3: [Green House](https://github.com/spring-projects/greenhouse)
 
 We would like to check if the correct version of software is deployed or not. To do this we are performing a test deployment:
------image -- use the image we used in presentation
+
+![alt text](http://tiernok.com/LTDBlog/ContinuousDelivery/Overview_p4.png)
 
 The app subjected to deployment has some changes done on it. The home page of the application was modified. So,the size of the homepage of the new version is different from the previous version. 
 
