@@ -29,13 +29,15 @@ The app subjected to deployment has some changes done on it. The home page of th
 ![alt text](https://github.ncsu.edu/github-enterprise-assets/0000/2100/0000/0781/5baf7202-ec62-11e4-8c53-a67f4394dc81.png)
 
 The jenkins job of the web application is configured in such a way that after successful deployment, It triggers selenium-test job and the selenium test job runs the selenium scripts to test if the correct version of changes are deployed or not.
-
+ 
 *Configure Selenium test*
 ![alt text](https://github.ncsu.edu/github-enterprise-assets/0000/2100/0000/0789/191f59e6-ec64-11e4-8911-a6aef8933a6f.png)
 
 ![alt text](https://github.ncsu.edu/github-enterprise-assets/0000/2100/0000/0783/d1ea7250-ec62-11e4-92a2-62c732978e68.png)
  
 One away of smoke testing the changes is to check the size of the home page. A selenium script is written to get the size of the page on which changes are made and comparing it with expected size. If the sizes do not match then the test case fails. 
+
+*Selenium code snippet to check file size*
 
 ```
 		URL local = new URL("http://localhost:9515");
@@ -51,6 +53,9 @@ One away of smoke testing the changes is to check the size of the home page. A s
 ```
 
 Another way to check if the changes made to the web page are deployed is to check if the text we have changed appears on the page. The below code snippet uses Chrome web driver to check if the text "Spring is light weight java application development framework" appears on the page. If the text doesn't appear, the test case fails. 
+
+*Selenium code snippet to check for specific text in file*
+
 
 ```
   		URL local = new URL("http://localhost:9515");
@@ -80,7 +85,7 @@ Selenium results for wrong and correct versions of software deployed.
 ![alt text](https://github.ncsu.edu/github-enterprise-assets/0000/2100/0000/0785/3d0ded0a-ec63-11e4-8805-94e49aaeb6d4.png)
 
 
-If all the selenium test cases are run and the job finishes successfully, we can add a post deploy step to deploy the artifacts in IST or Prod servers.
+If all the selenium test cases are run and the job finishes successfully, we can add a post deploy step to deploy the artifacts in IST or Prod servers. Here the Jenkins job is configured to deploy application to QA server.
 
 ![alt text](https://github.ncsu.edu/github-enterprise-assets/0000/2100/0000/0787/1496fb18-ec64-11e4-90e3-ae891fe71bb3.png)
 
