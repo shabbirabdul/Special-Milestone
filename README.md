@@ -28,7 +28,7 @@ The app subjected to deployment has some changes done on it. The home page of th
 *App after changes*
 ![alt text](https://github.ncsu.edu/github-enterprise-assets/0000/2100/0000/0781/5baf7202-ec62-11e4-8c53-a67f4394dc81.png)
 
-The jenkins job of the web application is configured in such a way that after successful deployment, It triggers selenium-test job and the selenium test job runs the selenium scripts to test if the correct version of changes are deployed or not.
+The jenkins job of the web application is configured in such a way that after successful deployment, It triggers selenium-test job and the [selenium test job] (https://github.com/shabbirabdul/Selenium-Testing.git) runs the selenium scripts to test if the correct version of changes are deployed or not.
  
 *Configure Selenium test*
 ![alt text](https://github.ncsu.edu/github-enterprise-assets/0000/2100/0000/0789/191f59e6-ec64-11e4-8911-a6aef8933a6f.png)
