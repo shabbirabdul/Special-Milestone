@@ -85,7 +85,7 @@ Selenium results for wrong and correct versions of software deployed.
 ![alt text](https://github.ncsu.edu/github-enterprise-assets/0000/2100/0000/0785/3d0ded0a-ec63-11e4-8805-94e49aaeb6d4.png)
 
 
-If all the selenium test cases are run and the job finishes successfully, we can add a post deploy step to deploy the artifacts in IST or Prod servers. Here the Jenkins job is configured to deploy application to QA server.
+If all the selenium test cases are run and the job finishes successfully, we can add a post deploy step to deploy the artifacts in IST or Prod servers. Here the Jenkins job is configured to deploy application to QA serve on successful completion of selenium tests.
 
 ![alt text](https://github.ncsu.edu/github-enterprise-assets/0000/2100/0000/0787/1496fb18-ec64-11e4-90e3-ae891fe71bb3.png)
 
